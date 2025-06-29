@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swedish adventures for Lucas and Linus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        /* Vibrant linear gradient matching the original CSS */
+        /* Tailwind doesn't support complex linear gradients directly in class names,
+           so this is a small addition. For full Tailwind, this would be in config. */
+        background: linear-gradient(135deg, #7ED9F5, #A0D9F5);
+      }
+      /* Custom scrollbar for a more polished look, if desired */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #FFC107; /* Accent color */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #e6ac00; /* Darker accent */
+      }
+      ::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
